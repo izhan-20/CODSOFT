@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" href="https://cdn2.iconfinder.com/data/icons/ios7-inspired-mac-icon-set/512/Calculator_512.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+</head>
+<body>
+
+<div class="container calculator w-50">
+    <h2 class="text-center mb-4">Calculator</h2>
+    <div class="mb-3">
+        <label for="num1" class="form-label">Number 1</label>
+        <input type="number" class="form-control" id="num1" placeholder="Enter first number">
+    </div>
+    <div class="mb-3">
+        <label for="num2" class="form-label">Number 2</label>
+        <input type="number" class="form-control" id="num2" placeholder="Enter second number">
+    </div>
+    <div class="text-center">
+        <button class="btn btn-primary my-1 w-100" onclick="calculate('add')">Addition</button>
+        <button class="btn btn-secondary my-1 w-100" onclick="calculate('subtract')">Subtraction</button>
+        <button class="btn btn-success my-1 w-100" onclick="calculate('multiply')">Multiplication</button>
+        <button class="btn btn-danger my-1 w-100" onclick="calculate('divide')">Division</button>
+    </div>
+    <div class="text-center mt-4">
+        <h3>Result: <span id="result">0</span></h3>
+    </div>
+</div>
+
+
+ <script src="script.js"></script>
+
+
+
+</body>
+</html>
